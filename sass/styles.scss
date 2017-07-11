@@ -290,6 +290,54 @@ section{
 
   }
 
+  &.section-6{
+    &.agenda-consulta{
+      .panel-body{
+        padding: 3em;
+
+      }
+      .bt-enviar{
+        @extend .btn-default;
+      }
+      .content-agenda{
+        margin: 0 4em;
+      }
+      .form-agendamento{
+        h4{
+          color: $blue-dark;
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+      .box-content{
+        font-size: 16px;
+        margin-bottom: 1.5em;
+        .phone{
+          font-size: 22px;
+          font-weight: bold;
+          color: $blue-green;
+        }
+      }
+      .iframe-container{
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        &> *{
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          width: 100%;
+        }
+
+      }
+    }
+  }
 
 
 }
