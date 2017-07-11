@@ -5,6 +5,7 @@
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
   <title>Dr.Leandro Lima</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -15,14 +16,17 @@
           <h1>Dr. Leandro Lima</h1>
         </div>
         <menu class="col-xs-6 col-md-8">
-          <img src="images/menu.png" alt="" class="visible-xs visible-sm">
+          <img src="images/menu.png" alt="" class="visible-xs visible-sm menu-hamburguer">
           <ul>
-            <li>Especialista</li>
-            <li>Tratamentos</li>
-            <li>Procedimentos</li>
-            <li>Depoimentos</li>
-            <li>A Clinica</li>
-            <li>Marque uma consulta</li>
+            <li>
+              <a href="#one">
+                Especialista
+              </a>
+            </li>
+            <li><a href="#two">Tratamentos</a> </li>
+            <li><a href="#three">Procedimentos</a> </li>
+            <li><a href="#four">Depoimentos</a> </li>
+            <li><a href="#five">Marque uma consulta</a> </li>
           </ul>
         </menu>
       </div>
@@ -42,7 +46,7 @@
     </div>
   </section>
 
-  <section class="section-2 especialista">
+  <section id="one" class="section-2 especialista">
     <h3>Dr. Leandro Lima</h3>
     <div class="flex-grid">
       <div class="info-doutor">
@@ -66,7 +70,7 @@
 
   </section>
 
-  <section class="section-3 tratamento">
+  <section id="two" class="section-3 tratamento">
     <h3>Tratamentos</h3>
 
     <p class="call">O direito de cuidar da pele vale para todas as pessoas, de todas as raças, cores, origens e classes sociais</p>
@@ -92,7 +96,7 @@
 
 </section>
 
-<section class="section-4 procedimentos">
+<section id="three" class="section-4 procedimentos">
   <h3>Procedimentos Dermatológicos</h3>
 
   <div class="container-fluid content-procedimentos">
@@ -119,14 +123,14 @@
 </section>
 
 
-<section class="section-5 depoimentos">
+<section id="four" class="section-5 depoimentos">
   <h3>
     Depoimentos
   </h3>
   <div class="container-fluid content-depoimentos">
 
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-sm-4 col-md-4">
         <div class="box">
 
           <div class="text-light">
@@ -139,7 +143,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-sm-4 col-md-4">
         <div class="box">
           <div class="text-light">
             <img src="images/aspas.png" class="img-quote">
@@ -152,7 +156,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-sm-4 col-md-4">
         <div class="box">
 
           <div class="text-light">
@@ -177,124 +181,163 @@
 
 </section>
 
-<section class="section-6 agenda-consulta">
+<section id="five" class="section-6 agenda-consulta">
   <h3 class="titulo-padrao-white">
     Agende uma consulta
   </h3>
 
-<div class="content-agenda">
+  <div class="content-agenda">
 
 
-  <div class="col-sm-5 form-agendamento">
-    <h4>Preencha os dados:</h4>
+    <div class="col-sm-12 col-md-5 form-agendamento">
+      <h4>Preencha os dados:</h4>
 
 
-    <form action="/contato/#wpcf7-f829-p830-o1" method="post" class="wpcf7-form" novalidate="novalidate">
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <div class="form-group">
-            <label for="">Nome</label>
-            <input type="text" class="form-control" id="" placeholder="">
+      <form action="/contato/#wpcf7-f829-p830-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="form-group">
+              <label for="">Nome</label>
+              <input type="text" class="form-control" id="" placeholder="">
 
-          </div>
-          <div class="form-group">
-            <label for="">Email</label>
-            <input type="text" class="form-control" id="" placeholder="">
-
-          </div>
-          <div class="form-group">
-            <label for="">Telefone</label>
-            <input type="text" class="form-control" id="" placeholder="">
-          </div>
-
-          <div class="form-group">
-            <label for="status" class="control-label">Convênio</label>
-            <div class="">
-              <select class="form-control" id="status" name="status">
-                <option>PARTICULAR</option>
-
-                <option>AASMED</option>
-
-                <option>ALLIANZ SAÚDE</option>
-
-                <option>AGF AMAGIS SAÚDE</option>
-
-                <option>AMMP SAÚDE</option>
-
-                <option>ASSEFAZ</option>
-
-                <option>BRADESCO SAÚDE</option>
-
-                <option>BC SAÚDE- BANCO CENTRAL</option>
-
-                <option>CASSI BANCO DO BRASIL</option>
-
-                <option>CEMIG SAÚDE</option>
-
-                <option>COPASS SAÚDE- COPASA</option>
-
-                <option>DESBAN</option>
-
-                <option>FUNDAÇÃO SAÚDE ITAÚ</option>
-
-                <option>FUNDAFFEMG</option>
-
-                <option>PETROBRÁS</option>
-
-                <option>POSTAL SAÚDE – ANTIGO CORREIOS SAÚDE</option>
-
-                <option>PLAMEDH</option>
-
-                <option>SAÚDE CAIXA – CAIXA ECONÔMICA FEDERAL</option>
-
-                <option>USIMINAS – USISAÚDE</option>
-
-              </select>
             </div>
-          </div>
-          <div class="form-group">
-            <label for="">Mensagem</label>
+            <div class="form-group">
+              <label for="">Email</label>
+              <input type="text" class="form-control" id="" placeholder="">
 
-            <textarea name="name" rows="8" cols="80" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="">Telefone</label>
+              <input type="text" class="form-control" id="" placeholder="">
+            </div>
+
+            <div class="form-group">
+              <label for="status" class="control-label">Convênio</label>
+              <div class="">
+                <select class="form-control" id="status" name="status">
+                  <option>PARTICULAR</option>
+
+                  <option>AASMED</option>
+
+                  <option>ALLIANZ SAÚDE</option>
+
+                  <option>AGF AMAGIS SAÚDE</option>
+
+                  <option>AMMP SAÚDE</option>
+
+                  <option>ASSEFAZ</option>
+
+                  <option>BRADESCO SAÚDE</option>
+
+                  <option>BC SAÚDE- BANCO CENTRAL</option>
+
+                  <option>CASSI BANCO DO BRASIL</option>
+
+                  <option>CEMIG SAÚDE</option>
+
+                  <option>COPASS SAÚDE- COPASA</option>
+
+                  <option>DESBAN</option>
+
+                  <option>FUNDAÇÃO SAÚDE ITAÚ</option>
+
+                  <option>FUNDAFFEMG</option>
+
+                  <option>PETROBRÁS</option>
+
+                  <option>POSTAL SAÚDE – ANTIGO CORREIOS SAÚDE</option>
+
+                  <option>PLAMEDH</option>
+
+                  <option>SAÚDE CAIXA – CAIXA ECONÔMICA FEDERAL</option>
+
+                  <option>USIMINAS – USISAÚDE</option>
+
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="">Mensagem</label>
+
+              <textarea name="name" rows="8" cols="80" class="form-control"></textarea>
+            </div>
+            <button type="button" name="button" class="bt-enviar">Enviar</button>
           </div>
-          <button type="button" name="button" class="bt-enviar">Enviar</button>
         </div>
+      </form>
+
+
+
+    </div> <!-- / panel preview -->
+
+    <div class="col-sm-12 col-md-7 col-map">
+      <div class="box-content">
+
+        <p>O consultório está localizada no tradicional bairro do Lourdes, na cidade de Belo Horizonte/MG.</p>
+
+        <p>Estamos na R. Prof. Antônio Aleixo, 331 - Lourdes, Belo Horizonte - MG</p>
+
+        <p>Marque a sua consulta pelo telefone. Ou formulário ao lado.</p>
+
+        <span class="phone">Telefones (31) 3281 3926 e (31) 98831 1002</span>
       </div>
-    </form>
 
 
-
-  </div> <!-- / panel preview -->
-
-  <div class="col-md-7 col-map">
-    <div class="box-content">
-
-    <p>O consultório está localizada no tradicional bairro do Lourdes, na cidade de Belo Horizonte/MG.</p>
-
-    <p>Estamos na R. Prof. Antônio Aleixo, 331 - Lourdes, Belo Horizonte - MG</p>
-
-    <p>Marque a sua consulta pelo telefone. Ou formulário ao lado.</p>
-
-    <span class="phone">Telefones (31) 3281 3926 e (31) 98831 1002</span>
-  </div>
-
-
-    <div class="iframe-container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.775719358897!2d-43.94542218563504!3d-19.93385388660155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699d8a310d199%3A0xbd63aefba74022a7!2sR.+Prof.+Ant%C3%B4nio+Aleixo%2C+331+-+Lourdes%2C+Belo+Horizonte+-+MG!5e0!3m2!1spt-BR!2sbr!4v1499794136449" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="iframe-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.775719358897!2d-43.94542218563504!3d-19.93385388660155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699d8a310d199%3A0xbd63aefba74022a7!2sR.+Prof.+Ant%C3%B4nio+Aleixo%2C+331+-+Lourdes%2C+Belo+Horizonte+-+MG!5e0!3m2!1spt-BR!2sbr!4v1499794136449" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
     </div>
-  </div>
-  <div class="clearfix">&nbsp;</div>
+    <div class="clearfix">&nbsp;</div>
   </div>
 </section>
 
 <footer>
 
-<div class="respon">
-  MÉDICO RESPONSÁVEL TÉCNICO
-  Dr Leandro Lima – CRM-MG 321200 / RQE 9652
-</div>
+  <div class="respon">
+    MÉDICO RESPONSÁVEL TÉCNICO
+    Dr Leandro Lima – CRM-MG 321200 / RQE 9652
+  </div>
 
 </footer>
+
+<script type="text/javascript">
+// Select all links with hashes
+$('a[href*="#"]')
+// Remove links that don't actually link to anything
+.not('[href="#"]')
+.not('[href="#0"]')
+.click(function(event) {
+  // On-page links
+  if (
+    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+    &&
+    location.hostname == this.hostname
+  ) {
+    // Figure out element to scroll to
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    // Does a scroll target exist?
+    if (target.length) {
+      // Only prevent default if animation is actually gonna happen
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000, function() {
+        // Callback after animation
+        // Must change focus!
+        var $target = $(target);
+        $target.focus();
+        if ($target.is(":focus")) { // Checking if the target was focused
+          return false;
+        } else {
+          $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+          $target.focus(); // Set focus again
+        };
+      });
+    }
+  }
+});
+</script>
 
 </body>
 </html>
